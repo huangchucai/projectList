@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width ,initial-scale=1,maximum-scale=1,minimum-scale=1" >  <!--如果不设置width= device-width,则浏览器默认模拟的是980px-->
+  <script>
+    var width = document.documentElement.clientWidth  //如果不设置宽度，浏览器默认模拟的是980px
+    var scale = width/320;
+    console.log(scale)
+    var css = `html{
+      font-size: ${320*scale}px
+    }`
+    document.write(`<style>${css}</style>`)
+  </script>
+  <title>动态rem</title>
+  <link rel="stylesheet" href="./build/styles.css">
+</head>
+<body>
+<section id="section1">
+  <img src="http://lorempixel.com/100/100" alt="">
+  <div class="content">
+      <span>标签1</span>
+      <span>标签2</span>
+      <span>标签3</span>
+      <span>标签4</span>
+  </div>
+</section>
+<section id="section2">
+  <h2>这是段落1</h2>
+  <h2>这是段落2</h2>
+  <p>这是段落2</p>
+  <p>这是段落2</p>
+</section>   
+</body>
+</html>
