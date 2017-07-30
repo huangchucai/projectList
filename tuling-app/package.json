@@ -1,0 +1,21 @@
+{
+  "name": "tuling-robot",
+  "version": "1.0.0",
+  "description": "这是一个图灵机器人运用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "startmon": "nodemon ./src/index.js",
+    "chat": "node ./bin/chat.js"
+  },
+  "bin": {
+    "my-robot": "./bin/chat.js"
+  },
+  "keywords": [],
+  "author": "huangchucai",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
